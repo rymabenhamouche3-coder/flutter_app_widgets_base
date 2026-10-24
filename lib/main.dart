@@ -16,10 +16,10 @@ class MainApp extends StatelessWidget {
       Text('Hello World!'),
       Text('Bonjour Ryma'),
  Container(
-  margin: EdgeInsets.all(20),
-  padding: EdgeInsets.all(16),
+  margin: EdgeInsets.all(30),
+  padding: EdgeInsets.all(24),
   decoration: BoxDecoration(
-    color:  Colors.red,
+    color:  Colors.orange,
     borderRadius: BorderRadius.circular(20),
   ),
   child: Text(
@@ -29,7 +29,7 @@ class MainApp extends StatelessWidget {
  ),
  Text('Bienvenue dans mon application Flutter !'),
  Stack(
-alignment: Alignment.topRight,
+alignment: Alignment.center,
   children: [
     Container(width: 200, height: 200, color: Colors.blue[100]),
     Icon(Icons.star, size: 100, color: Colors.amber),
@@ -41,8 +41,8 @@ alignment: Alignment.topRight,
 ),
   Row(
 
-  mainAxisAlignment: MainAxisAlignment.spaceAround,
-  crossAxisAlignment: CrossAxisAlignment.center,
+  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+  crossAxisAlignment: CrossAxisAlignment.start,
   children: [
     Icon(Icons.home, color: Colors.blue, size: 40),
     Icon(Icons.star, color: Colors.amber, size: 40),
